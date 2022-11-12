@@ -414,20 +414,47 @@ address {
 }
 /* -----------CLIENTS --------------- */
 
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .clients-list {
   display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  gap: 30px;
 }
 
 .clients-link {
+  border: 1px solid var(--icon-color);
   display: inline-flex;
   width: 170px;
   height: 92px;
   justify-content: center;
-  border: 1px solid var(--icon-color);
+  align-items: center;
   color: var(--icon-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.clients-logo {
+  fill: currentColor;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 /* ------PORTFOLIO------------- */
@@ -479,4 +506,54 @@ address {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+.add {
+  margin-left: 70px;
+}
+
+.add-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primery-white-color);
+}
+
+.add-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+.add-item:not(:last-child) {
+  margin-right: 10px;
+}
+.add-link {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 50px;
+  color: var(--primery-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.add-link:hover,
+.add-link:focus {
+  background-color: var(--accent-color);
+  color: var(--primery-white-color);
+}
+.add-logo {
+  fill: currentColor;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
